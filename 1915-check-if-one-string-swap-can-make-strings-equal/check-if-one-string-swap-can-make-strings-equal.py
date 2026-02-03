@@ -4,6 +4,8 @@ class Solution:
         for i in range(len(s1)):
             if s1[i] != s2[i]:
                 mismatch.append([s1[i], s2[i]])
+            if len(mismatch) > 2:
+                return False
 
         if len(mismatch) == 0:
             return True
