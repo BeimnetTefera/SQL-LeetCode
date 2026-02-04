@@ -7,6 +7,5 @@ class Solution:
             for j in range(len(nums)):
                 if nums[j] < curr:
                     count += 1
-
             result.append(count)
         return result
